@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "free-mono";
+  src: url("https://cdn.glitch.global/42a44c14-bd17-4d7d-bcbf-6001def23f21/FreeMono.ttf?v=1728339870812");
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #CAD8C3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#reveal-text {
+  font-family: "free-mono", sans-serif;
+  font-size: 32px;
+  color: darkgreen;
+  text-align: center; /* Ensure the text is centered */
+  display: inline-block; /* Center the block of text */
+  z-index:10;
+}
+
+.sub-text {
+  font-size: 24px; /* Set the font size for the new line */
+  color: darkgreen; /* Adjust the color to match or differentiate */
+  margin-top: 20px; /* Add space between the two lines */
+  text-align: center; /* Center-align the sub-text */
+  display: block; /* Ensure it's treated as a block for proper alignment */
+}
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(75px);
+  z-index: 1; /* Lower z-index for dots to be below the text */
+}
+
+  
